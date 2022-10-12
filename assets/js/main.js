@@ -14,28 +14,28 @@ const plus = function (array) {
     array.forEach(num => {
         result += num;
     });
-    return result;
+    return result.toFixed(2);
 };
 const minus = function (array) {
     let result = array[0];
     for (let i = 1; i < array.length; i++) {
         result -= array[i];        
     }
-    return result;
+    return result.toFixed(2);
 };
 const multiply = function (array) {
     let result = 1;
     array.forEach(num => {
         result *= num;
     });
-    return result;
+    return result.toFixed(2);
 };
 const divide = function (array) {
     let result = array[0];
     for (let i = 1; i < array.length; i++) {
         result /= array[i];        
     }
-    return result;
+    return result.toFixed(2);
 };
 
 const inputs = [];
@@ -47,7 +47,6 @@ for (let i = 0; i < n; i++) {
     inputs.push(getNumber(`${i + 1}. Eded `));
 }
 
-console.log(inputs);
 
 
 let opt;
